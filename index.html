@@ -1,545 +1,774 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- SEO Meta Tags -->
-  <title>Semana de la Era Inteligente - Nohelia Badillo</title>
-  <meta name="description" content="Descubre el método con el que cientos de mujeres en Ecuador ya están generando $500 semanales vendiendo productos digitales de la mano de Nohelia Badillo.">
-  <meta name="keywords" content="era inteligente, nohelia badillo, productos digitales, ecuador, generar ingresos, negocios digitales">
-  <meta name="author" content="Nohelia Badillo">
-
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Semana de la Era Inteligente - Nohelia Badillo">
-  <meta property="og:description" content="Descubre el método con el que cientos de mujeres en Ecuador ya están generando $500 semanales vendiendo productos digitales.">
-  <meta property="og:image" content="https://lh3.googleusercontent.com/d/15o2UN5m0zJMTw411ZDc401vVOLJq_OC3">
-
-  <!-- Fonts -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ERA DIGITAL PRO</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Tailwind CSS Play CDN -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           fontFamily: {
-            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-            display: ['Montserrat', 'sans-serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          boxShadow: {
+            '2xs': '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
+            'xs': '0 1px 3px 0 rgba(0, 0, 0, 0.05)',
           }
         }
       }
     }
   </script>
-
   <style>
-    /* Estilos personalizados y resets globales para asegurar compatibilidad universal */
-    ::selection {
-      background-color: #39FF14;
-      color: #000000;
+    body {
+      font-family: 'Inter', sans-serif;
     }
-    
-    /* Previene scroll horizontal y asegura fondo negro */
-    html, body {
-      background-color: #000000;
-      color: #ffffff;
-      overflow-x: hidden;
-      margin: 0;
-      padding: 0;
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes scaleUp {
+      from { opacity: 0; transform: scale(0.96); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    .animate-fadeIn {
+      animation: fadeIn 0.2s ease-out forwards;
+    }
+    .animate-scaleUp {
+      animation: scaleUp 0.25s ease-out forwards;
     }
   </style>
-  
-  <!-- Meta Pixel Code -->
-  <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '868997542814547');
-  fbq('track', 'PageView');
-  </script>
-  <!-- End Meta Pixel Code -->
 </head>
-<body class="bg-[#000000] text-white font-sans selection:bg-[#39FF14] selection:text-black min-h-screen antialiased">
-  <!-- Meta Pixel noscript fallback -->
-  <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=868997542814547&ev=PageView&noscript=1"
-  /></noscript>
+<body class="min-h-screen bg-white text-[#0F172A] selection:bg-[#0284C7] selection:text-white flex flex-col justify-between">
 
-  <div id="landing-root">
-    
-    <!-- 1. Header & Hero Section -->
-    <header id="hero-section" class="relative overflow-hidden pt-12 pb-16 lg:pb-24">
-      
-      <!-- Luces ambientales de fondo purpura -->
-      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-[#A020F0]/10 rounded-full blur-[120px] pointer-events-none"></div>
+  <!-- CONTENIDO PRINCIPAL DE LA PÁGINA -->
+  <div>
+    <!-- 0. ENCABEZADO PRINCIPAL (HERO) -->
+    <section class="flex flex-col items-center justify-center px-4 pt-16 md:pt-20 pb-12 md:pb-16 text-center max-w-6xl mx-auto w-full">
+      <div class="inline-flex items-center justify-center px-6 py-2 bg-[#F8FAFC] border border-[#E2E8F0] rounded-full shadow-xs text-[11px] font-semibold tracking-[0.25em] text-[#0284C7] uppercase mb-10 md:mb-14">
+        TEXAS &middot; UNITED STATES
+      </div>
 
-      <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
-        
-        <!-- Frame Principal del Banner -->
-        <div class="mb-8 relative rounded-2xl overflow-hidden shadow-xl aspect-video max-w-3xl mx-auto bg-neutral-950">
-          <img 
-            src="https://lh3.googleusercontent.com/d/15o2UN5m0zJMTw411ZDc401vVOLJq_OC3" 
-            alt="Semana de la Era Inteligente" 
-            class="w-full h-full object-cover"
-            referrerpolicy="no-referrer"
-          >
-        </div>
+      <h1 class="text-5xl sm:text-7xl md:text-8xl lg:text-[96px] font-bold tracking-tight text-[#0F172A] leading-[0.95] mb-2 select-none">
+        ERA DIGITAL PRO
+      </h1>
 
-        <!-- Título Core de la Landing -->
-        <div class="mb-8">
-          <h1 class="font-display font-extrabold text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.1] tracking-tight uppercase">
-            SEMANA DE LA ERA
-            <span class="text-[#FFD700] block mt-1 tracking-normal font-black drop-shadow-[0_4px_12px_rgba(255,215,0,0.15)]">
-              INTELIGENTE
+      <p class="max-w-2xl text-center text-[#334155] text-sm md:text-[15px] leading-relaxed font-normal mt-8 md:mt-10 px-4">
+        Emprendimiento digital dedicado a la creación, comercialización y distribución de productos digitales y contenidos educativos para mercados internacionales.
+      </p>
+    </section>
+
+    <!-- 1. SECCIÓN: IDENTIDAD Y DATOS LEGALES -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-8 items-start">
+        <!-- Tarjeta Izquierda: Quiénes somos -->
+        <div class="lg:col-span-6 bg-[#F8FAFC] rounded-[28px] p-8 md:p-12 shadow-xs border border-[#E2E8F0] h-full flex flex-col justify-between">
+          <div>
+            <span class="text-[11px] font-semibold tracking-[0.22em] text-[#0284C7] uppercase block mb-3">
+              IDENTIDAD
             </span>
-          </h1>
-        </div>
-
-        <!-- Subtítulos, captions de la cabecera -->
-        <div class="space-y-6 max-w-2xl mx-auto mb-10 text-gray-200">
-          <p class="text-base sm:text-lg md:text-xl font-medium leading-relaxed">
-            Descubre el método con el que cientos de mujeres en Ecuador ya están generando 
-            <b class="inline-block mx-1.5 my-1 text-[#39FF14] text-lg sm:text-2xl font-black bg-[#39FF14]/5 px-2.5 py-1 rounded border border-[#39FF14]/20 align-baseline">
-              $500 semanales
-            </b> 
-            vendiendo productos digitales.
-          </p>
-          
-          <p class="text-sm md:text-base italic font-medium text-gray-300">
-            Sin dejar tu trabajo, sin salir en cámaras y sin tener experiencia previa
-          </p>
-
-          <div class="inline-block bg-white/5 backdrop-blur-sm px-6 py-3 rounded-xl border border-white/10 shadow-lg">
-            <span class="text-sm md:text-base font-semibold tracking-wide uppercase text-[#FFD700]">
-              En 4 CLASES GRATUITAS te enseñaré cómo lograrlo
-            </span>
-          </div>
-        </div>
-
-        <!-- Botón de Acción Principal (Estático, sin efectos dinámicos de mouse, abre en la misma pestaña) -->
-        <div class="flex justify-center">
-          <a
-            href="https://chat.whatsapp.com/FJYjq8JEXvA8mX1J9NqreM"
-            target="_self"
-            id="cta-hero-register"
-            class="w-full sm:w-auto px-10 py-5 bg-[#39FF14] text-black font-black tracking-wider text-lg sm:text-xl rounded-xl shadow-[0_4px_20px_rgba(57,255,20,0.3)] uppercase inline-flex items-center justify-center gap-3 border border-[#39FF14] leading-none select-none text-center"
-          >
-            QUIERO REGISTRARME
-            <svg class="w-5 h-5 shrink-0 stroke-[3]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-              <polyline points="12 5 19 12 12 19"></polyline>
-            </svg>
-          </a>
-        </div>
-
-      </div>
-    </header>
-
-    <!-- 2. Franja Púrpura Fechas 1 -->
-    <section id="purple-stripe-1" class="bg-[#A020F0] py-4 shadow-lg relative overflow-hidden">
-      <div class="absolute inset-0 bg-white/5"></div>
-      <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
-        <p class="font-display font-extrabold text-white text-lg sm:text-xl md:text-2xl tracking-widest uppercase">
-          27, 28, 29, 30 DE JULIO
-        </p>
-      </div>
-    </section>
-
-    <!-- 3. Sección de Beneficios / Dolores -->
-    <section id="benefits-section" class="py-16 md:py-24 bg-[#000000] relative px-4">
-      <div class="max-w-3xl mx-auto">
-        
-        <!-- Bloque de Pregunta y Dolor -->
-        <div class="mb-12 border-2 border-[#A020F0] rounded-2xl bg-[#0a0a0a] p-6 sm:p-8 text-center shadow-[0_4px_30px_rgba(160,32,240,0.15)] relative overflow-hidden">
-          <div class="absolute top-0 left-0 w-2 h-full bg-[#A020F0]"></div>
-          <h3 class="text-base sm:text-lg md:text-xl font-bold leading-relaxed text-white">
-            ¿Trabajas todos los días... <span class="italic text-gray-300 font-light">pero aún así el dinero y el tiempo nunca son suficientes para</span> <span class="text-[#FFD700] underline decoration-[#A020F0] underline-offset-4 font-black">garantizar tu tranquilidad financiera?</span>
-          </h3>
-        </div>
-
-        <!-- Lista de Dolores -->
-        <ul class="space-y-4 mb-16 pl-2 text-left animate-fade-in" id="pain-points-list">
-          <li class="flex items-start gap-3.5 text-sm sm:text-base text-gray-200">
-            <div class="p-1 rounded-full bg-[#A020F0]/10 border border-[#A020F0]/30 mt-0.5 shrink-0">
-              <svg class="w-4 h-4 text-[#A020F0] stroke-[3.5]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>
-            </div>
-            <span>Te esfuerzas horas en la oficina, pero tus ingresos no crecen</span>
-          </li>
-          <li class="flex items-start gap-3.5 text-sm sm:text-base text-gray-200">
-            <div class="p-1 rounded-full bg-[#A020F0]/10 border border-[#A020F0]/30 mt-0.5 shrink-0">
-              <svg class="w-4 h-4 text-[#A020F0] stroke-[3.5]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>
-            </div>
-            <span>Sientes que tu vida pasa mientras apenas sobrevives</span>
-          </li>
-          <li class="flex items-start gap-3.5 text-sm sm:text-base text-gray-200">
-            <div class="p-1 rounded-full bg-[#A020F0]/10 border border-[#A020F0]/30 mt-0.5 shrink-0">
-              <svg class="w-4 h-4 text-[#A020F0] stroke-[3.5]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>
-            </div>
-            <span>Estás cansada de ver cómo otras logran libertad económica mientras tú sigues atrapada</span>
-          </li>
-          <li class="flex items-start gap-3.5 text-sm sm:text-base text-gray-200">
-            <div class="p-1 rounded-full bg-[#A020F0]/10 border border-[#A020F0]/30 mt-0.5 shrink-0">
-              <svg class="w-4 h-4 text-[#A020F0] stroke-[3.5]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>
-            </div>
-            <span>Sueñas con estabilidad financiera y más tiempo para tu familia... pero no sabes cómo lograrlo sin arriesgarlo todo</span>
-          </li>
-        </ul>
-
-        <!-- Bloque de Solución -->
-        <div class="mb-12 border-2 border-[#A020F0] rounded-2xl bg-[#0a0a0a] p-6 sm:p-8 text-center shadow-[0_4px_30px_rgba(160,32,240,0.15)] relative overflow-hidden">
-          <div class="absolute top-0 left-0 w-2 h-full bg-[#A020F0]"></div>
-          <p class="text-lg sm:text-xl md:text-2xl font-black text-white tracking-wide uppercase">
-            La semana de la Era Inteligente es para ti si...
-          </p>
-        </div>
-
-        <!-- Lista de Personas Cualificadas -->
-        <ul class="space-y-4 mb-16 pl-2 text-left" id="fit-points-list">
-          <li class="flex items-start gap-3.5 text-sm sm:text-base text-gray-200">
-            <div class="p-1 rounded-full bg-[#A020F0]/10 border border-[#A020F0]/30 mt-0.5 shrink-0">
-              <svg class="w-4 h-4 text-[#A020F0] stroke-[3.5]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>
-            </div>
-            <span>Tienes un empleo y quieres un segundo salario real sin renunciar</span>
-          </li>
-          <li class="flex items-start gap-3.5 text-sm sm:text-base text-gray-200">
-            <div class="p-1 rounded-full bg-[#A020F0]/10 border border-[#A020F0]/30 mt-0.5 shrink-0">
-              <svg class="w-4 h-4 text-[#A020F0] stroke-[3.5]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>
-            </div>
-            <span>Te cansaste de dar todo por un sueldo que no alcanza</span>
-          </li>
-          <li class="flex items-start gap-3.5 text-sm sm:text-base text-gray-200">
-            <div class="p-1 rounded-full bg-[#A020F0]/10 border border-[#A020F0]/30 mt-0.5 shrink-0">
-              <svg class="w-4 h-4 text-[#A020F0] stroke-[3.5]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>
-            </div>
-            <span>Quieres empezar a generar ingresos desde casa, sin exponerte en redes</span>
-          </li>
-          <li class="flex items-start gap-3.5 text-sm sm:text-base text-gray-200">
-            <div class="p-1 rounded-full bg-[#A020F0]/10 border border-[#A020F0]/30 mt-0.5 shrink-0">
-              <svg class="w-4 h-4 text-[#A020F0] stroke-[3.5]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>
-            </div>
-            <span>No quieres perder más tiempo ni dinero en modelos que no funcionan</span>
-          </li>
-        </ul>
-
-        <!-- Botón de Registro Intermedio -->
-        <div class="text-center flex justify-center">
-          <a
-            href="https://chat.whatsapp.com/FJYjq8JEXvA8mX1J9NqreM"
-            target="_self"
-            id="cta-benefits-register"
-            class="w-full sm:w-auto px-8 py-5 bg-[#39FF14] text-black font-black tracking-wider text-base sm:text-lg rounded-xl shadow-[0_4px_20px_rgba(57,255,20,0.3)] uppercase inline-flex items-center justify-center gap-3 border border-[#39FF14] select-none text-center"
-          >
-            RESERVAR MI CUPO AHORA MISMO!
-            <svg class="w-5 h-5 shrink-0 stroke-[3]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-              <polyline points="12 5 19 12 12 19"></polyline>
-            </svg>
-          </a>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- 4. Franja Púrpura Fechas 2 -->
-    <section id="purple-stripe-2" class="bg-[#A020F0] py-4 shadow-lg relative overflow-hidden">
-      <div class="absolute inset-0 bg-white/5"></div>
-      <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
-        <p class="font-display font-extrabold text-white text-lg sm:text-xl md:text-2xl tracking-widest uppercase">
-          27, 28, 29, 30 DE JULIO
-        </p>
-      </div>
-    </section>
-
-    <!-- 5. Sección del Plan de Clases (Subida la sección quitando espaciador redundante) -->
-    <section id="classes-schedule-section" class="py-10 md:py-14 bg-[#000000] relative px-4">
-      
-      <!-- Círculo decorativo de fondo -->
-      <div class="absolute bottom-1/4 right-1/4 w-[300px] md:w-[400px] h-[300px] md:h-[400px] bg-[#A020F0]/5 rounded-full blur-[100px] pointer-events-none"></div>
-
-      <div class="max-w-4xl mx-auto">
-        
-        <div class="text-center mb-8">
-          <h2 class="font-display font-bold text-2xl sm:text-3xl md:text-4xl text-white">
-            4 clases en donde esto es lo que aprenderás...
-          </h2>
-          <div class="h-1 bg-[#A020F0] w-24 mx-auto mt-4 rounded-full"></div>
-        </div>
-
-        <!-- Cards de Plan de Clase -->
-        <div class="space-y-6 mb-8 text-left" id="classes-grid">
-          
-          <!-- Card Clase 01 -->
-          <div class="bg-[#1A1A1A] rounded-xl p-6 sm:p-8 flex flex-col md:flex-row items-start gap-6 border border-[#A020F0]/10 transition-colors duration-200 hover:border-[#A020F0]/40 shadow-md">
-            <div class="text-5xl sm:text-6xl font-black text-[#A020F0] font-display min-w-[70px] select-none leading-none pt-1">
-              01.
-            </div>
-            <div class="flex-1 space-y-2">
-              <span class="block text-xs font-mono uppercase tracking-wider text-gray-400 italic">
-                Lunes 27 de Julio
-              </span>
-              <h4 class="text-lg sm:text-xl font-bold text-white tracking-tight">
-                La oportunidad más segura del 2026
-              </h4>
-              <p class="text-sm sm:text-base text-gray-300 leading-relaxed">
-                Descubrirás cómo generar un segundo salario trabajando de forma inteligente, sin vender tu tiempo ni renunciar a tu empleo.
+            <h2 class="text-3xl md:text-4xl font-bold text-[#0F172A] mb-8">
+              Quiénes somos
+            </h2>
+            <div class="space-y-6 text-[#334155] text-sm md:text-[15px] leading-relaxed font-normal">
+              <p>
+                ERA DIGITAL PRO es una marca comercial operada directamente por Cuzco Chanaluisa Alexandra Verónica como persona natural y profesional independiente (Sole Proprietorship), establecida en el Estado de Texas, Estados Unidos. Me especializo en el desarrollo, comercialización y distribución de productos digitales —ebooks, guías, recursos descargables y programas de aprendizaje— diseñados para emprendedores y profesionales en mercados internacionales.
+              </p>
+              <p>
+                Mi misión es democratizar el acceso al conocimiento práctico, ofreciendo contenido de alta calidad a precios accesibles, con entrega 100% digital e inmediata a través de canales de venta seguros y verificados.
               </p>
             </div>
           </div>
-
-          <!-- Card Clase 02 -->
-          <div class="bg-[#1A1A1A] rounded-xl p-6 sm:p-8 flex flex-col md:flex-row items-start gap-6 border border-[#A020F0]/10 transition-colors duration-200 hover:border-[#A020F0]/40 shadow-md">
-            <div class="text-5xl sm:text-6xl font-black text-[#A020F0] font-display min-w-[70px] select-none leading-none pt-1">
-              02.
-            </div>
-            <div class="flex-1 space-y-2">
-              <span class="block text-xs font-mono uppercase tracking-wider text-gray-400 italic">
-                Martes 28 de Julio
-              </span>
-              <h4 class="text-lg sm:text-xl font-bold text-white tracking-tight">
-                Cómo construir tu sistema de ventas por internet con inteligencia artificial
-              </h4>
-              <p class="text-sm sm:text-base text-gray-300 leading-relaxed">
-                Aprenderás a crear un sistema que te permite vender productos digitales por internet con ayuda de la inteligencia artificial en minutos, sin ser experta.
-              </p>
-            </div>
-          </div>
-
-          <!-- Card Clase 03 -->
-          <div class="bg-[#1A1A1A] rounded-xl p-6 sm:p-8 flex flex-col md:flex-row items-start gap-6 border border-[#A020F0]/10 transition-colors duration-200 hover:border-[#A020F0]/40 shadow-md">
-            <div class="text-5xl sm:text-6xl font-black text-[#A020F0] font-display min-w-[70px] select-none leading-none pt-1">
-              03.
-            </div>
-            <div class="flex-1 space-y-2">
-              <span class="block text-xs font-mono uppercase tracking-wider text-gray-400 italic">
-                Miércoles 29 de Julio
-              </span>
-              <h4 class="text-lg sm:text-xl font-bold text-white tracking-tight">
-                La estrategia con la que generé $2,500 USD en un mes
-              </h4>
-              <p class="text-sm sm:text-base text-gray-300 leading-relaxed">
-                Te enseñaré la estrategia más simple para iniciar desde cero y lograr estos resultados, incluso si hoy solo tienes 1 hora libre al día.
-              </p>
-            </div>
-          </div>
-
-          <!-- Card Clase 04 -->
-          <div class="bg-[#1A1A1A] rounded-xl p-6 sm:p-8 flex flex-col md:flex-row items-start gap-6 border border-[#A020F0]/10 transition-colors duration-200 hover:border-[#A020F0]/40 shadow-md">
-            <div class="text-5xl sm:text-6xl font-black text-[#A020F0] font-display min-w-[70px] select-none leading-none pt-1">
-              04.
-            </div>
-            <div class="flex-1 space-y-2">
-              <span class="block text-xs font-mono uppercase tracking-wider text-gray-400 italic">
-                Jueves 30 de Julio
-              </span>
-              <h4 class="text-lg sm:text-xl font-bold text-white tracking-tight">
-                Como construir tu patrimonio digital
-              </h4>
-              <p class="text-sm sm:text-base text-gray-300 leading-relaxed">
-                Descubrirás la estrategia secreta para ganar el sueldo de un año en 1 semana y construir tu patrimonio digital.
-              </p>
-            </div>
-          </div>
-
         </div>
 
-        <!-- Botón de Registro Clases -->
-        <div class="text-center flex justify-center">
-          <a
-            href="https://chat.whatsapp.com/FJYjq8JEXvA8mX1J9NqreM"
-            target="_self"
-            id="cta-schedule-register"
-            class="w-full sm:w-auto px-8 py-5 bg-[#39FF14] text-black font-black tracking-wider text-base sm:text-lg rounded-xl shadow-[0_4px_20px_rgba(57,255,20,0.3)] uppercase inline-flex items-center justify-center gap-3 border border-[#39FF14] select-none text-center"
-          >
-            RESERVAR MI CUPO AHORA MISMO!
-            <svg class="w-5 h-5 shrink-0 stroke-[3]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-              <polyline points="12 5 19 12 12 19"></polyline>
-            </svg>
-          </a>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- 6. Sección de Mentoría / Quien te Guía (Subida de sección removiendo padding excesivo) -->
-    <section id="instructor-section" class="py-10 md:py-14 bg-[#000000] border-t border-white/5 relative px-4">
-      
-      <!-- Luces de fondo -->
-      <div class="absolute top-1/2 left-0 w-72 h-72 bg-[#A020F0]/10 rounded-full blur-[100px] pointer-events-none"></div>
-
-      <div class="max-w-4xl mx-auto">
-        
-        <div class="mb-8 text-center md:text-left">
-          <span class="text-[#A020F0] font-mono text-xs uppercase tracking-widest font-black block mb-2">
-            QUIÉN VA A GUIARTE...
+        <!-- Tarjeta Derecha: Datos Legales -->
+        <div class="lg:col-span-6 bg-[#F8FAFC] rounded-[28px] p-8 md:p-12 shadow-xs border border-[#E2E8F0] h-full">
+          <span class="text-[11px] font-semibold tracking-[0.22em] text-[#0284C7] uppercase block mb-6">
+            DATOS LEGALES
           </span>
-          <h2 class="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl text-white tracking-tight uppercase">
-            NOHELIA BADILLO
-          </h2>
-          <div class="h-1 bg-[#A020F0] w-16 mt-3 rounded-full mx-auto md:mx-0"></div>
-        </div>
 
-        <!-- Columnas del Grid -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
-          
-          <!-- Columna Izquierda: Imagen del Mentor -->
-          <div class="lg:col-span-5 md:max-w-xs mx-auto w-full">
-            <div class="relative rounded-2xl overflow-hidden border-2 border-white/10 shadow-2xl bg-neutral-950 aspect-[3/4] w-full">
-              <img 
-                src="https://lh3.googleusercontent.com/d/1jFrdAisQeQJaDfbYioRVAzlkvqMCFJmM" 
-                alt="Nohelia Badillo" 
-                class="w-full h-full object-cover"
-                referrerpolicy="no-referrer"
-              >
+          <div class="divide-y divide-[#E2E8F0] space-y-4">
+            <div class="pt-2">
+              <span class="text-[10px] md:text-[11px] font-semibold tracking-[0.18em] text-[#64748B] uppercase block mb-1">
+                TITULAR / OPERADOR
+              </span>
+              <p class="text-sm font-semibold text-[#0F172A]">
+                Cuzco Chanaluisa Alexandra Verónica
+              </p>
+            </div>
+
+            <div class="pt-4">
+              <span class="text-[10px] md:text-[11px] font-semibold tracking-[0.18em] text-[#64748B] uppercase block mb-1">
+                TIPO DE PROPIEDAD
+              </span>
+              <p class="text-sm font-semibold text-[#0F172A]">
+                Persona Natural / Sole Proprietorship (Profesional Independiente)
+              </p>
+            </div>
+
+            <div class="pt-4">
+              <span class="text-[10px] md:text-[11px] font-semibold tracking-[0.18em] text-[#64748B] uppercase block mb-1">
+                ESTADO DE REGISTRO / OPERACIÓN
+              </span>
+              <p class="text-sm font-semibold text-[#0F172A]">
+                Texas, United States
+              </p>
+            </div>
+
+            <div class="pt-4">
+              <span class="text-[10px] md:text-[11px] font-semibold tracking-[0.18em] text-[#64748B] uppercase block mb-1">
+                EMAIL DE CONTACTO
+              </span>
+              <a href="mailto:soporte@eradigitalpro.com" class="text-sm font-semibold text-[#0284C7] hover:underline">
+                soporte@eradigitalpro.com
+              </a>
+            </div>
+
+            <div class="pt-4">
+              <span class="text-[10px] md:text-[11px] font-semibold tracking-[0.18em] text-[#64748B] uppercase block mb-1">
+                TELÉFONO DE ATENCIÓN
+              </span>
+              <a href="tel:+15052097753" class="text-sm font-semibold text-[#0284C7] hover:underline">
+                +1 505 209 7753
+              </a>
+            </div>
+
+            <div class="pt-4">
+              <span class="text-[10px] md:text-[11px] font-semibold tracking-[0.18em] text-[#64748B] uppercase block mb-1">
+                TIEMPO DE RESPUESTA
+              </span>
+              <p class="text-sm font-semibold text-[#0F172A]">
+                Respondemos dentro de 24–48 horas hábiles
+              </p>
             </div>
           </div>
-
-          <!-- Columna Derecha: Biografía del Mentor con Correcciones Actualizadas -->
-          <div class="lg:col-span-7 space-y-6 text-sm sm:text-base leading-relaxed text-gray-200 text-left">
-            <p>
-              Hola, mi nombre es Nohelia Badillo, tengo 25 años, soy de Ecuador y vivo con una condición para toda mi vida. Por esta razón paso más tiempo en el hospital que en mi casa, y eso no solo afecta mi salud, sino también mi estabilidad económica.
-            </p>
-            
-            <p>
-              Siempre quise encontrar una forma de generar ingresos sin descuidar mi salud, algo que pudiera hacer desde casa y a mi propio ritmo. Un trabajo tradicional, con horarios estrictos y esfuerzo físico, simplemente no era una opción para mí.
-            </p>
-
-            <p>
-              Cuando descubrí los negocios digitales, entendí que existía una oportunidad diferente: No tenía que vender de forma presencial, no incomodaba a nadie y todo funcionaba por internet.
-            </p>
-
-            <p>
-              Hoy, gracias a Dios, mi negocio me genera de manera automática, y lo más importante: he podido continuar con mi tratamiento y apoyar a mi familia.
-            </p>
-
-            <p>
-              Si estás leyendo esto, quiero decirte algo: si hay oportunidades, solo necesitas tomar la decisión. Ahora quiero mostrarte a ti el camino.
-            </p>
-
-            <p class="text-[#FFD700] text-lg font-bold pt-2 italic flex items-center justify-center md:justify-start gap-2 w-full text-center md:text-left">
-              ¿Me acompañas?
-            </p>
-          </div>
-
         </div>
-
-        <!-- Botón de Registro Mentor -->
-        <div class="text-center mt-8 md:mt-10 flex justify-center">
-          <a
-            href="https://chat.whatsapp.com/FJYjq8JEXvA8mX1J9NqreM"
-            target="_self"
-            id="cta-mentor-register"
-            class="w-full sm:w-auto px-10 py-5 bg-[#39FF14] text-black font-black tracking-wider text-base sm:text-lg rounded-xl shadow-[0_4px_20px_rgba(57,255,20,0.3)] uppercase inline-flex items-center justify-center gap-3 border border-[#39FF14] select-none text-center"
-          >
-            SI NOHE, TE ACOMPAÑO!
-            <svg class="w-5 h-5 shrink-0 stroke-[3]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-              <polyline points="12 5 19 12 12 19"></polyline>
-            </svg>
-          </a>
-        </div>
-
       </div>
     </section>
 
-    <!-- 7. Pie de Página y Cita Final (Sección unificada sin espaciado gigante) -->
-    <section id="footer-quotes-section" class="py-10 md:py-14 bg-[#000000] border-t border-white/5 relative px-4">
-      
-      <div class="max-w-3xl mx-auto text-center">
-        
-        <!-- Cita Principal -->
-        <div class="mb-8">
-          <h2 class="font-display font-black text-2xl sm:text-3xl md:text-4xl text-white leading-snug tracking-tight max-w-2xl mx-auto uppercase">
-            "CUANDO EL ESTUDIANTE ESTÁ LISTO, LA OPORTUNIDAD APARECE"
-          </h2>
-          <div class="h-1 bg-[#A020F0] w-24 mx-auto mt-4 rounded-full"></div>
+    <!-- 2. SECCIÓN: SERVICIOS -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+      <div class="bg-[#F8FAFC] rounded-[28px] p-8 md:p-12 shadow-xs border border-[#E2E8F0]">
+        <span class="text-[11px] font-semibold tracking-[0.22em] text-[#0284C7] uppercase block mb-3">
+          SERVICIOS
+        </span>
+        <h2 class="text-3xl md:text-4xl font-bold text-[#0F172A] mb-8">
+          Qué ofrecemos
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+          <!-- Card 01 -->
+          <div class="bg-white rounded-2xl p-6 md:p-8 border border-[#E2E8F0] shadow-xs hover:border-[#0284C7]/40 transition-colors">
+            <span class="font-semibold text-[#0284C7] text-lg block mb-4">01</span>
+            <h3 class="text-base font-semibold text-[#0F172A] mb-2">Ebooks & Guías PDF</h3>
+            <p class="text-[#334155] text-xs md:text-sm leading-relaxed font-normal">
+              Publicaciones digitales descargables sobre negocios, finanzas, productividad y habilidades prácticas. Entrega automática inmediata tras la compra.
+            </p>
+          </div>
+
+          <!-- Card 02 -->
+          <div class="bg-white rounded-2xl p-6 md:p-8 border border-[#E2E8F0] shadow-xs hover:border-[#0284C7]/40 transition-colors">
+            <span class="font-semibold text-[#0284C7] text-lg block mb-4">02</span>
+            <h3 class="text-base font-semibold text-[#0F172A] mb-2">Infoproductos & Cursos</h3>
+            <p class="text-[#334155] text-xs md:text-sm leading-relaxed font-normal">
+              Programas de aprendizaje estructurados orientados a resultados concretos para profesionales y emprendedores en mercados internacionales.
+            </p>
+          </div>
+
+          <!-- Card 03 -->
+          <div class="bg-white rounded-2xl p-6 md:p-8 border border-[#E2E8F0] shadow-xs hover:border-[#0284C7]/40 transition-colors">
+            <span class="font-semibold text-[#0284C7] text-lg block mb-4">03</span>
+            <h3 class="text-base font-semibold text-[#0F172A] mb-2">Packs de Recursos</h3>
+            <p class="text-[#334155] text-xs md:text-sm leading-relaxed font-normal">
+              Plantillas, checklists, dashboards y materiales descargables para profesionales independientes y emprendedores.
+            </p>
+          </div>
+
+          <!-- Card 04 -->
+          <div class="bg-white rounded-2xl p-6 md:p-8 border border-[#E2E8F0] shadow-xs hover:border-[#0284C7]/40 transition-colors">
+            <span class="font-semibold text-[#0284C7] text-lg block mb-4">04</span>
+            <h3 class="text-base font-semibold text-[#0F172A] mb-2">Consulting Digital</h3>
+            <p class="text-[#334155] text-xs md:text-sm leading-relaxed font-normal">
+              Asesoramiento estratégico para lanzar, escalar y monetizar productos de conocimiento en plataformas y mercados digitales internacionales.
+            </p>
+          </div>
         </div>
-
-        <!-- Balas de Cierre -->
-        <ul class="space-y-4 max-w-xl mx-auto text-left mb-8 pl-2" id="footer-bullets">
-          <li class="flex items-start gap-3.5 text-sm sm:text-base text-gray-200">
-            <div class="p-1 rounded-full bg-[#A020F0]/10 border border-[#A020F0]/30 mt-0.5 shrink-0">
-              <svg class="w-4 h-4 text-[#A020F0] stroke-[3.5]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>
-            </div>
-            <span>Miles de mujeres de Ecuador y toda Latinoamérica ya cambiaron su realidad</span>
-          </li>
-          <li class="flex items-start gap-3.5 text-sm sm:text-base text-gray-200">
-            <div class="p-1 rounded-full bg-[#A020F0]/10 border border-[#A020F0]/30 mt-0.5 shrink-0">
-              <svg class="w-4 h-4 text-[#A020F0] stroke-[3.5]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>
-            </div>
-            <span>Tú también puedes hacerlo</span>
-          </li>
-          <li class="flex items-start gap-3.5 text-sm sm:text-base text-gray-200">
-            <div class="p-1 rounded-full bg-[#A020F0]/10 border border-[#A020F0]/30 mt-0.5 shrink-0">
-              <svg class="w-4 h-4 text-[#A020F0] stroke-[3.5]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>
-            </div>
-            <span>No dejes que el miedo o la falta de información te sigan deteniendo</span>
-          </li>
-        </ul>
-
-        <!-- Botón de Registro de Pie de Página -->
-        <div class="mb-8 flex justify-center">
-          <a
-            href="https://chat.whatsapp.com/FJYjq8JEXvA8mX1J9NqreM"
-            target="_self"
-            id="cta-footer-register"
-            class="w-full sm:w-auto px-8 py-5 bg-[#39FF14] text-black font-black tracking-wider text-base sm:text-lg rounded-xl shadow-[0_4px_20px_rgba(57,255,20,0.3)] uppercase inline-flex items-center justify-center gap-3 border border-[#39FF14] select-none text-center"
-          >
-            RESERVAR MI CUPO AHORA MISMO!
-            <svg class="w-5 h-5 shrink-0 stroke-[3]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-              <polyline points="12 5 19 12 12 19"></polyline>
-            </svg>
-          </a>
-        </div>
-
-        <div class="h-px bg-white/10 w-full mb-8"></div>
-
-        <!-- Descargos de responsabilidad y detalles -->
-        <div class="space-y-4 text-gray-500 text-[10px] sm:text-xs">
-          <p class="font-mono">
-            © 2026 Nohelia Badillo. Todos los derechos reservados.
-          </p>
-          <p class="max-w-2xl mx-auto leading-relaxed px-4 text-center">
-            NOT FACEBOOK: This site is not a part of the Facebook website or Facebook Inc. Additionally, This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc. -Este sitio es para uso del público en general, el uso del sitio web se rige por las siguientes políticas de privacidad, que debe leer antes de usar el sitio.-
-          </p>
-        </div>
-
       </div>
     </section>
 
+    <!-- 3. SECCIÓN: PROCESO -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+      <div class="bg-[#F8FAFC] rounded-[28px] p-8 md:p-12 shadow-xs border border-[#E2E8F0]">
+        <span class="text-[11px] font-semibold tracking-[0.22em] text-[#0284C7] uppercase block mb-3">
+          PROCESO
+        </span>
+        <h2 class="text-3xl md:text-4xl font-bold text-[#0F172A] mb-10">
+          Cómo funciona
+        </h2>
+
+        <div class="divide-y divide-[#E2E8F0] space-y-6">
+          <!-- Item I -->
+          <div class="flex items-start gap-5 pt-2">
+            <div class="w-10 h-10 rounded-full border border-[#0284C7]/30 flex items-center justify-center text-[#0284C7] text-sm font-semibold shrink-0 bg-white mt-0.5">
+              I
+            </div>
+            <div>
+              <h3 class="text-sm md:text-base font-semibold text-[#0F172A] mb-1">Descubrimiento</h3>
+              <p class="text-[#334155] text-xs md:text-sm leading-relaxed font-normal">
+                El cliente encuentra el producto a través de nuestros canales digitales, redes sociales y páginas de venta autorizadas.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item II -->
+          <div class="flex items-start gap-5 pt-6">
+            <div class="w-10 h-10 rounded-full border border-[#0284C7]/30 flex items-center justify-center text-[#0284C7] text-sm font-semibold shrink-0 bg-white mt-0.5">
+              II
+            </div>
+            <div>
+              <h3 class="text-sm md:text-base font-semibold text-[#0F172A] mb-1">Compra segura</h3>
+              <p class="text-[#334155] text-xs md:text-sm leading-relaxed font-normal">
+                Proceso de pago encriptado con tarjeta de crédito o débito, procesado de forma segura a través de Stripe, Inc. y PayPal Holdings, Inc.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item III -->
+          <div class="flex items-start gap-5 pt-6">
+            <div class="w-10 h-10 rounded-full border border-[#0284C7]/30 flex items-center justify-center text-[#0284C7] text-sm font-semibold shrink-0 bg-white mt-0.5">
+              III
+            </div>
+            <div>
+              <h3 class="text-sm md:text-base font-semibold text-[#0F172A] mb-1">Entrega inmediata</h3>
+              <p class="text-[#334155] text-xs md:text-sm leading-relaxed font-normal">
+                El producto digital es enviado automáticamente al correo electrónico del comprador al instante tras la confirmación del pago.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item IV -->
+          <div class="flex items-start gap-5 pt-6">
+            <div class="w-10 h-10 rounded-full border border-[#0284C7]/30 flex items-center justify-center text-[#0284C7] text-sm font-semibold shrink-0 bg-white mt-0.5">
+              IV
+            </div>
+            <div>
+              <h3 class="text-sm md:text-base font-semibold text-[#0F172A] mb-1">Soporte post-compra</h3>
+              <p class="text-[#334155] text-xs md:text-sm leading-relaxed font-normal">
+                Acompañamiento humano vía email (
+                <a href="mailto:soporte@eradigitalpro.com" class="text-[#0284C7] font-medium hover:underline">soporte@eradigitalpro.com</a>
+                ) o teléfono (
+                <a href="tel:+15052097753" class="text-[#0284C7] font-medium hover:underline">+1 505 209 7753</a>
+                ) dentro de 24–48 horas hábiles.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SECCIÓN: CONTACTO -->
+    <section id="contacto" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 scroll-mt-6">
+      <div class="bg-[#F8FAFC] rounded-[28px] p-8 md:p-12 shadow-xs border border-[#E2E8F0] mb-6">
+        <span class="text-[11px] font-semibold tracking-[0.22em] text-[#0284C7] uppercase block mb-3">
+          CONTACTO
+        </span>
+        <h2 class="text-3xl md:text-4xl font-bold text-[#0F172A] mb-10">
+          Ponerse en contacto
+        </h2>
+
+        <div class="divide-y divide-[#E2E8F0] space-y-5">
+          <!-- Email -->
+          <div class="flex items-center gap-4 pt-2">
+            <div class="w-11 h-11 rounded-full bg-white border border-[#E2E8F0] flex items-center justify-center text-[#0284C7] shrink-0">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <div>
+              <span class="text-[10px] md:text-[11px] font-semibold tracking-[0.18em] text-[#64748B] uppercase block mb-0.5">EMAIL</span>
+              <a href="mailto:soporte@eradigitalpro.com" class="text-sm font-semibold text-[#0284C7] hover:underline">
+                soporte@eradigitalpro.com
+              </a>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="flex items-center gap-4 pt-5">
+            <div class="w-11 h-11 rounded-full bg-white border border-[#E2E8F0] flex items-center justify-center text-[#0284C7] shrink-0">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            </div>
+            <div>
+              <span class="text-[10px] md:text-[11px] font-semibold tracking-[0.18em] text-[#64748B] uppercase block mb-0.5">TELÉFONO</span>
+              <a href="tel:+15052097753" class="text-sm font-semibold text-[#0284C7] hover:underline">
+                +1 505 209 7753
+              </a>
+            </div>
+          </div>
+
+          <!-- Legal Entity -->
+          <div class="flex items-center gap-4 pt-5">
+            <div class="w-11 h-11 rounded-full bg-white border border-[#E2E8F0] flex items-center justify-center text-[#0284C7] shrink-0">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+            </div>
+            <div>
+              <span class="text-[10px] md:text-[11px] font-semibold tracking-[0.18em] text-[#64748B] uppercase block mb-0.5">TITULAR LEGAL</span>
+              <p class="text-sm font-semibold text-[#0F172A]">
+                Cuzco Chanaluisa Alexandra Verónica (Sole Proprietorship)
+              </p>
+            </div>
+          </div>
+
+          <!-- Address -->
+          <div class="flex items-center gap-4 pt-5">
+            <div class="w-11 h-11 rounded-full bg-white border border-[#E2E8F0] flex items-center justify-center text-[#0284C7] shrink-0">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <div>
+              <span class="text-[10px] md:text-[11px] font-semibold tracking-[0.18em] text-[#64748B] uppercase block mb-0.5">UBICACIÓN</span>
+              <p class="text-sm font-semibold text-[#0F172A]">
+                Texas, United States
+              </p>
+            </div>
+          </div>
+
+          <!-- Response Time -->
+          <div class="flex items-center gap-4 pt-5">
+            <div class="w-11 h-11 rounded-full bg-white border border-[#E2E8F0] flex items-center justify-center text-[#0284C7] shrink-0">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <div>
+              <span class="text-[10px] md:text-[11px] font-semibold tracking-[0.18em] text-[#64748B] uppercase block mb-0.5">TIEMPO DE RESPUESTA</span>
+              <p class="text-sm font-semibold text-[#0F172A]">
+                Respondemos dentro de 24–48 horas hábiles
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Franja resumen inferior -->
+      <div class="bg-[#F8FAFC] rounded-[22px] p-6 md:p-8 shadow-xs border border-[#E2E8F0]">
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-6 text-left">
+          <div>
+            <span class="text-[10px] font-semibold tracking-[0.18em] text-[#64748B] uppercase block mb-1">PROPIEDAD</span>
+            <p class="text-xs md:text-sm font-semibold text-[#0F172A]">Persona Natural</p>
+          </div>
+          <div>
+            <span class="text-[10px] font-semibold tracking-[0.18em] text-[#64748B] uppercase block mb-1">ESTADO</span>
+            <p class="text-xs md:text-sm font-semibold text-[#0F172A]">Texas, USA</p>
+          </div>
+          <div>
+            <span class="text-[10px] font-semibold tracking-[0.18em] text-[#64748B] uppercase block mb-1">OPERADOR</span>
+            <p class="text-xs md:text-sm font-semibold text-[#0F172A] truncate" title="Cuzco Chanaluisa A. V.">Cuzco Chanaluisa A. V.</p>
+          </div>
+          <div>
+            <span class="text-[10px] font-semibold tracking-[0.18em] text-[#64748B] uppercase block mb-1">TELÉFONO</span>
+            <p class="text-xs md:text-sm font-semibold text-[#0F172A]">+1 505 209 7753</p>
+          </div>
+          <div>
+            <span class="text-[10px] font-semibold tracking-[0.18em] text-[#64748B] uppercase block mb-1">ATENCIÓN</span>
+            <p class="text-xs md:text-sm font-semibold text-[#0F172A]">24–48 hrs hábiles</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 
+  <!-- MODAL EMERGENTE DE POLÍTICA DE PRIVACIDAD -->
+  <div id="modal-privacy" class="hidden fixed inset-0 z-50 bg-[#0F172A]/60 backdrop-blur-xs flex items-center justify-center p-4 sm:p-6 md:p-8 animate-fadeIn">
+    <div class="bg-white rounded-[28px] max-w-4xl w-full max-h-[88vh] flex flex-col shadow-2xl border border-[#E2E8F0] overflow-hidden relative animate-scaleUp" onclick="event.stopPropagation()">
+      <!-- Header -->
+      <div class="px-6 sm:px-8 py-5 border-b border-[#E2E8F0] bg-[#F8FAFC] flex items-center justify-between sticky top-0 z-10">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-full bg-[#0284C7]/10 flex items-center justify-center text-[#0284C7]">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <div>
+            <h2 class="text-lg md:text-xl font-bold text-[#0F172A]">Política de Privacidad</h2>
+            <p class="text-[11px] text-[#64748B] uppercase tracking-wider font-semibold">Cuzco Chanaluisa Alexandra Verónica</p>
+          </div>
+        </div>
+        <button onclick="closeModal('modal-privacy')" class="w-9 h-9 rounded-full bg-white border border-[#E2E8F0] text-[#0F172A] hover:bg-[#0F172A] hover:text-white transition-colors flex items-center justify-center cursor-pointer shadow-2xs">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <!-- Scrollable content -->
+      <div class="p-6 sm:p-8 md:p-10 overflow-y-auto space-y-6 text-[#334155] text-sm md:text-[15px] leading-relaxed font-normal">
+        <div class="bg-[#F8FAFC] rounded-2xl p-5 border border-[#E2E8F0] space-y-1.5 text-xs md:text-sm text-[#334155]">
+          <p><strong class="font-semibold text-[#0F172A]">ÚLTIMA ACTUALIZACIÓN:</strong> AGOSTO 2026</p>
+          <p><strong class="font-semibold text-[#0F172A]">OPERADOR DEL SITIO:</strong> Cuzco Chanaluisa Alexandra Verónica</p>
+          <p><strong class="font-semibold text-[#0F172A]">UBICACIÓN:</strong> Texas, United States</p>
+          <p><strong class="font-semibold text-[#0F172A]">CONTACTO DE SOPORTE:</strong> <a href="mailto:soporte@eradigitalpro.com" class="text-[#0284C7] font-medium hover:underline">soporte@eradigitalpro.com</a></p>
+        </div>
+
+        <hr class="border-t border-[#E2E8F0] my-6" />
+
+        <div>
+          <h3 class="text-base md:text-lg font-bold text-[#0F172A] mb-3">1. INFORMACIÓN QUE RECOPILAMOS</h3>
+          <p class="mb-3"><strong class="font-semibold text-[#0F172A]">Cuzco Chanaluisa Alexandra Verónica</strong> recopila información personal únicamente cuando es strictly necesaria para procesar las transacciones de compra de nuestros productos digitales o para responder a las consultas de soporte de nuestros clientes.</p>
+          <p class="mb-3">La información que podemos recopilar incluye:</p>
+          <ul class="list-disc pl-6 space-y-2 text-[#334155]">
+            <li><strong class="font-semibold text-[#0F172A]">Datos de identificación y contacto:</strong> Nombre completo y dirección de correo electrónico.</li>
+            <li><strong class="font-semibold text-[#0F172A]">Datos de ubicación y facturación:</strong> Dirección de facturación, país de residencia e información encriptada del método de pago procesada de forma segura por terceros.</li>
+            <li><strong class="font-semibold text-[#0F172A]">Datos de uso técnico:</strong> Dirección IP, tipo de navegador e información básica de navegación necesaria para validar la descarga del producto digital adquirido.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-base md:text-lg font-bold text-[#0F172A] mb-3">2. NATURALEZA DEL NEGOCIO Y USO DE LA INFORMACIÓN</h3>
+          <p class="mb-3">Este sitio web se dedica exclusivamente a la comercialización y distribución de contenido educativo e informativo en formato de archivos digitales descargables (ebooks, guías y recursos en formato PDF).</p>
+          <p class="mb-3">La información recopilada se utiliza exclusivamente para las siguientes finalidades:</p>
+          <ol class="list-decimal pl-6 space-y-2 text-[#334155] mb-3">
+            <li>Procesar la transacción comercial y enviar automáticamente el enlace de acceso o descarga del archivo digital al correo electrónico del comprador.</li>
+            <li>Brindar soporte técnico y atención al cliente post-compra dentro de un plazo de 24 a 48 horas hábiles.</li>
+            <li>Cumplir con las obligaciones fiscales y contables aplicables bajo las leyes de los Estados Unidos de América.</li>
+          </ol>
+          <p><strong class="font-semibold text-[#0F172A]">Garantía de Privacidad:</strong> No vendemos, alquilamos, intercambiamos ni compartimos información personal con terceros para fines comerciales o publicitarios sin el consentimiento explícito del usuario.</p>
+        </div>
+
+        <div>
+          <h3 class="text-base md:text-lg font-bold text-[#0F172A] mb-3">3. PROCESAMIENTO SEGURO DE PAGOS (PCI-DSS)</h3>
+          <p class="mb-3">Todos los pagos realizados en este sitio web son procesados de forma cifrada mediante proveedores de servicios de pago de terceros certificados bajo los estándares internacionales de seguridad PCI-DSS Nivel 1, principalmente <strong class="font-semibold text-[#0F172A]">Stripe, Inc.</strong> y <strong class="font-semibold text-[#0F172A]">PayPal Holdings, Inc.</strong></p>
+          <ul class="list-disc pl-6 space-y-2 text-[#334155]">
+            <li><strong class="font-semibold text-[#0F172A]">No almacenamiento de tarjetas:</strong> Cuzco Chanaluisa Alexandra Verónica no almacena, procesa ni tiene acceso directo a los números de tarjetas de crédito o débito de los compradores.</li>
+            <li><strong class="font-semibold text-[#0F172A]">Cifrado de datos:</strong> Toda la transmisión de datos entre su navegador y este sitio web se realiza mediante conexiones seguras protegidas con protocolo SSL/TLS.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-base md:text-lg font-bold text-[#0F172A] mb-3">4. COOKIES Y TECNOLOGÍAS DE RASTREO</h3>
+          <p>Este sitio web utiliza únicamente cookies técnicas indispensables para garantizar el correcto funcionamiento de la página, la navegación segura y la correcta gestión del proceso de pago. No empleamos cookies de terceros ni tecnologías de rastreo con fines publicitarios invasivos.</p>
+        </div>
+
+        <div>
+          <h3 class="text-base md:text-lg font-bold text-[#0F172A] mb-3">5. DERECHOS DEL USUARIO</h3>
+          <p class="mb-3">Cualquier cliente o visitante de este sitio web tiene derecho a:</p>
+          <ul class="list-disc pl-6 space-y-2 text-[#334155] mb-3">
+            <li>Solicitar la confirmación sobre si sus datos personales están siendo procesados.</li>
+            <li>Solicitar la actualización, corrección o eliminación de sus datos de contacto de nuestros registros de atención al cliente.</li>
+            <li>Solicitar información sobre las transacciones asociadas a su correo electrónico.</li>
+          </ul>
+          <p>Para ejercer cualquiera de estos derechos, puede comunicarse directamente con nuestro equipo enviando un mensaje a <a href="mailto:soporte@eradigitalpro.com" class="text-[#0284C7] font-medium hover:underline">soporte@eradigitalpro.com</a>.</p>
+        </div>
+
+        <div>
+          <h3 class="text-base md:text-lg font-bold text-[#0F172A] mb-3">6. MENORES DE EDAD</h3>
+          <p>Nuestros productos digitales y servicios están dirigidos a personas mayores de 18 años. No recopilamos conscientemente información personal de menores de edad. Si un padre o tutor identifica que un menor ha proporcionado información personal en este sitio, contáctenos de inmediato para proceder con su eliminación.</p>
+        </div>
+
+        <div>
+          <h3 class="text-base md:text-lg font-bold text-[#0F172A] mb-3">7. LEY APLICABLE Y JURISDICCIÓN</h3>
+          <p>Esta Política de Privacidad y la operación comercial de este sitio web se rigen e interpretan de acuerdo con las leyes del Estado de <strong class="font-semibold text-[#0F172A]">Texas</strong>, Estados Unidos de América, sin dar efecto a ningún principio de conflicto de leyes.</p>
+        </div>
+
+        <div>
+          <h3 class="text-base md:text-lg font-bold text-[#0F172A] mb-3">8. DATOS DE CONTACTO</h3>
+          <p class="mb-3">Para cualquier duda, aclaración o solicitud relacionada con esta Política de Privacidad, puede ponerse en contacto a través de los siguientes canales:</p>
+          <ul class="list-disc pl-6 space-y-2 text-[#334155]">
+            <li><strong class="font-semibold text-[#0F172A]">Titular / Operador:</strong> Cuzco Chanaluisa Alexandra Verónica</li>
+            <li><strong class="font-semibold text-[#0F172A]">Ubicación:</strong> Texas, United States</li>
+            <li><strong class="font-semibold text-[#0F172A]">Email de Soporte:</strong> <a href="mailto:soporte@eradigitalpro.com" class="text-[#0284C7] font-medium hover:underline">soporte@eradigitalpro.com</a></li>
+            <li><strong class="font-semibold text-[#0F172A]">Tiempo de respuesta estimado:</strong> 24 a 48 horas hábiles</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="px-6 sm:px-8 py-4 border-t border-[#E2E8F0] bg-[#F8FAFC] flex justify-end sticky bottom-0 z-10">
+        <button onclick="closeModal('modal-privacy')" class="px-6 py-2.5 bg-[#0284C7] text-white text-xs font-semibold uppercase tracking-wider rounded-full hover:bg-[#0284C7]/90 transition-colors cursor-pointer shadow-xs">
+          Entendido / Cerrar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL EMERGENTE DE TÉRMINOS Y CONDICIONES -->
+  <div id="modal-terms" class="hidden fixed inset-0 z-50 bg-[#0F172A]/60 backdrop-blur-xs flex items-center justify-center p-4 sm:p-6 md:p-8 animate-fadeIn">
+    <div class="bg-white rounded-[28px] max-w-4xl w-full max-h-[88vh] flex flex-col shadow-2xl border border-[#E2E8F0] overflow-hidden relative animate-scaleUp" onclick="event.stopPropagation()">
+      <!-- Header -->
+      <div class="px-6 sm:px-8 py-5 border-b border-[#E2E8F0] bg-[#F8FAFC] flex items-center justify-between sticky top-0 z-10">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-full bg-[#0284C7]/10 flex items-center justify-center text-[#0284C7]">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          </div>
+          <div>
+            <h2 class="text-lg md:text-xl font-bold text-[#0F172A]">Términos y Condiciones</h2>
+            <p class="text-[11px] text-[#64748B] uppercase tracking-wider font-semibold">Cuzco Chanaluisa Alexandra Verónica</p>
+          </div>
+        </div>
+        <button onclick="closeModal('modal-terms')" class="w-9 h-9 rounded-full bg-white border border-[#E2E8F0] text-[#0F172A] hover:bg-[#0F172A] hover:text-white transition-colors flex items-center justify-center cursor-pointer shadow-2xs">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <!-- Scrollable content -->
+      <div class="p-6 sm:p-8 md:p-10 overflow-y-auto space-y-6 text-[#334155] text-sm md:text-[15px] leading-relaxed font-normal">
+        <div class="bg-[#F8FAFC] rounded-2xl p-5 border border-[#E2E8F0] space-y-1.5 text-xs md:text-sm text-[#334155]">
+          <p><strong class="font-semibold text-[#0F172A]">ÚLTIMA ACTUALIZACIÓN:</strong> AGOSTO 2026</p>
+          <p><strong class="font-semibold text-[#0F172A]">OPERADOR DEL SITIO:</strong> Cuzco Chanaluisa Alexandra Verónica</p>
+          <p><strong class="font-semibold text-[#0F172A]">UBICACIÓN:</strong> Texas, United States</p>
+          <p><strong class="font-semibold text-[#0F172A]">CONTACTO DE SOPORTE:</strong> <a href="mailto:soporte@eradigitalpro.com" class="text-[#0284C7] font-medium hover:underline">soporte@eradigitalpro.com</a></p>
+        </div>
+
+        <hr class="border-t border-[#E2E8F0] my-6" />
+
+        <div>
+          <h3 class="text-base md:text-lg font-bold text-[#0F172A] mb-3">1. ACEPTACIÓN DE LOS TÉRMINOS</h3>
+          <p>Al acceder a este sitio web, navegar por sus contenidos o adquirir cualquier producto digital comercializado por <strong class="font-semibold text-[#0F172A]">Cuzco Chanaluisa Alexandra Verónica</strong>, usted (en adelante, "el Usuario" o "el Cliente") acepta y se compromete a cumplir de manera vinculante los presentes Términos y Condiciones. Si no está de acuerdo con alguna de las disposiciones aquí establecidas, debe abstenerse de utilizar este sitio web o comprar nuestros productos.</p>
+        </div>
+
+        <div>
+          <h3 class="text-base md:text-lg font-bold text-[#0F172A] mb-3">2. NATURALEZA DE LOS PRODUCTOS Y SERVICIOS</h3>
+          <p class="mb-3">Este sitio web se dedica a la comercialización y distribución exclusiva de productos digitales educativos e informativos (ebooks, guías, plantillas y recursos descargables en formato PDF).</p>
+          <ul class="list-disc pl-6 space-y-2 text-[#334155]">
+            <li><strong class="font-semibold text-[#0F172A]">Entrega Electrónica:</strong> Todos los productos son de descarga digital e inmediata. No se realiza ningún tipo de envío, empaque ni entrega de bienes físicos a direcciones postales.</li>
+            <li><strong class="font-semibold text-[#0F172A]">Acceso:</strong> Tras completar el pago, el Usuario recibirá las instrucciones de acceso y los enlaces de descarga directamente en la dirección de correo electrónico proporcionada durante el proceso de compra.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-base md:text-lg font-bold text-[#0F172A] mb-3">3. LICENCIA DE USO Y PROPIEDAD INTELECTUAL</h3>
+          <p class="mb-3">Todo el contenido disponible en este sitio web, incluyendo textos, gráficos, logotipos, ebooks, archivos PDF y diseño general, es propiedad exclusiva de <strong class="font-semibold text-[#0F172A]">Cuzco Chanaluisa Alexandra Verónica</strong> y está protegido por las leyes de propiedad intelectual de los Estados Unidos de América e internacionales.</p>
+          <ul class="list-disc pl-6 space-y-2 text-[#334155]">
+            <li><strong class="font-semibold text-[#0F172A]">Concesión de Licencia:</strong> La compra de un producto digital otorga al Cliente una licencia personal, individual, no exclusiva, revocable e intransferible para su uso estrictamente personal y no comercial.</li>
+            <li><strong class="font-semibold text-[#0F172A]">Prohibiciones:</strong> Queda estrictamente prohibido copiar, reproducir, revender, alquilar, redistribuir, modificar, compartir con terceros o subir a redes de intercambio de archivos cualquier producto digital adquirido sin el consentimiento expreso y por escrito del Operador del Sitio.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-base md:text-lg font-bold text-[#0F172A] mb-3">4. PRECIOS Y PROCESAMIENTO DE PAGOS</h3>
+          <p class="mb-3">Todos los precios indicados en este sitio web están expresados en dólares estadounidenses (USD) e incluyen los costos digitales correspondientes.</p>
+          <ul class="list-disc pl-6 space-y-2 text-[#334155]">
+            <li><strong class="font-semibold text-[#0F172A]">Pasarelas de Pago:</strong> Los pagos son procesados de forma cifrada y segura a través de proveedores de servicios de pago de terceros certificados PCI-DSS (principalmente Stripe, Inc. y PayPal Holdings, Inc.).</li>
+            <li><strong class="font-semibold text-[#0F172A]">Seguridad de Datos:</strong> Cuzco Chanaluisa Alexandra Verónica no almacena ni tiene acceso directo a los datos de tarjetas de crédito o débito de los usuarios.</li>
+            <li><strong class="font-semibold text-[#0F172A]">Cargos Adicionales:</strong> El Usuario es responsable de cualquier tarifa o comisión adicional que su entidad bancaria o emisora de tarjeta de crédito pueda aplicar por transacciones internacionales o conversión de divisas.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-base md:text-lg font-bold text-[#0F172A] mb-3">5. POLÍTICA DE REEMBOLSOS</h3>
+          <p>Debido a la naturaleza intangible y de entrega inmediata de los productos digitales descargables, todas las ventas son finales. Las condiciones específicas, excepciones por fallas técnicas y procedimientos para solicitudes de soporte o devoluciones se rigen detalladamente por nuestra Política de Reembolsos.</p>
+        </div>
+
+        <div>
+          <h3 class="text-base md:text-lg font-bold text-[#0F172A] mb-3">6. EXCLUSIÓN DE GARANTÍAS Y LIMITACIÓN DE RESPONSABILIDAD</h3>
+          <p class="mb-3">Los contenidos e información proporcionados en nuestros ebooks y guías digitales se ofrecen con fines puramente educativos e informativos.</p>
+          <ul class="list-disc pl-6 space-y-2 text-[#334155]">
+            <li><strong class="font-semibold text-[#0F172A]">Sin Garantía de Resultados:</strong> Cuzco Chanaluisa Alexandra Verónica no garantiza ni asegura resultados específicos (financieros, comerciales, personales o profesionales) derivados del uso o implementación de la información contenida en los productos.</li>
+            <li><strong class="font-semibold text-[#0F172A]">Uso Bajo Propio Riesgo:</strong> El uso de la información es bajo la única y exclusiva responsabilidad del Cliente. En ningún caso el Operador del Sitio será responsable por daños directos, indirectos, incidentales o consecuentes que surjan del uso o la imposibilidad de uso de nuestros productos digitales.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-base md:text-lg font-bold text-[#0F172A] mb-3">7. MODIFICACIONES A LOS TÉRMINOS</h3>
+          <p>Nos reservamos el derecho de actualizar, modificar o reemplazar cualquier parte de estos Términos y Condiciones en cualquier momento mediante la publicación de los cambios en este sitio web. La fecha de "Última actualización" al inicio de este documento reflejará el momento de las modificaciones. El uso continuado del sitio web tras la publicación de cambios constituye la aceptación explícita de dichos cambios.</p>
+        </div>
+
+        <div>
+          <h3 class="text-base md:text-lg font-bold text-[#0F172A] mb-3">8. LEY APLICABLE Y JURISDICCIÓN</h3>
+          <p>Estos Términos y Condiciones se rigen e interpretan de acuerdo con las leyes del Estado de <strong class="font-semibold text-[#0F172A]">Texas</strong>, Estados Unidos de América, sin dar efecto a ningún principio de conflicto de leyes. Cualquier disputa o reclamo relacionado con el uso de este sitio web o la compra de productos se someterá a la jurisdicción exclusiva de los tribunales competentes en el Estado de Texas.</p>
+        </div>
+
+        <div>
+          <h3 class="text-base md:text-lg font-bold text-[#0F172A] mb-3">9. DATOS DE CONTACTO Y ATENCIÓN AL CLIENTE</h3>
+          <p class="mb-3">Para cualquier duda, aclaración, problema técnico con la descarga de un producto o consulta sobre estos Términos y Condiciones, puede ponerse en contacto con nosotros:</p>
+          <ul class="list-disc pl-6 space-y-2 text-[#334155]">
+            <li><strong class="font-semibold text-[#0F172A]">Titular / Operador:</strong> Cuzco Chanaluisa Alexandra Verónica</li>
+            <li><strong class="font-semibold text-[#0F172A]">Ubicación:</strong> Texas, United States</li>
+            <li><strong class="font-semibold text-[#0F172A]">Email de Soporte:</strong> <a href="mailto:soporte@eradigitalpro.com" class="text-[#0284C7] font-medium hover:underline">soporte@eradigitalpro.com</a></li>
+            <li><strong class="font-semibold text-[#0F172A]">Tiempo estimado de respuesta:</strong> 24 a 48 horas hábiles</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="px-6 sm:px-8 py-4 border-t border-[#E2E8F0] bg-[#F8FAFC] flex justify-end sticky bottom-0 z-10">
+        <button onclick="closeModal('modal-terms')" class="px-6 py-2.5 bg-[#0284C7] text-white text-xs font-semibold uppercase tracking-wider rounded-full hover:bg-[#0284C7]/90 transition-colors cursor-pointer shadow-xs">
+          Entendido / Cerrar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL EMERGENTE DE POLÍTICA DE REEMBOLSOS Y DEVOLUCIONES -->
+  <div id="modal-refunds" class="hidden fixed inset-0 z-50 bg-[#0F172A]/60 backdrop-blur-xs flex items-center justify-center p-4 sm:p-6 md:p-8 animate-fadeIn">
+    <div class="bg-white rounded-[28px] max-w-4xl w-full max-h-[88vh] flex flex-col shadow-2xl border border-[#E2E8F0] overflow-hidden relative animate-scaleUp" onclick="event.stopPropagation()">
+      <!-- Header -->
+      <div class="px-6 sm:px-8 py-5 border-b border-[#E2E8F0] bg-[#F8FAFC] flex items-center justify-between sticky top-0 z-10">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-full bg-[#0284C7]/10 flex items-center justify-center text-[#0284C7]">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+          </div>
+          <div>
+            <h2 class="text-lg md:text-xl font-bold text-[#0F172A]">Política de Reembolsos y Devoluciones</h2>
+            <p class="text-[11px] text-[#64748B] uppercase tracking-wider font-semibold">Cuzco Chanaluisa Alexandra Verónica</p>
+          </div>
+        </div>
+        <button onclick="closeModal('modal-refunds')" class="w-9 h-9 rounded-full bg-white border border-[#E2E8F0] text-[#0F172A] hover:bg-[#0F172A] hover:text-white transition-colors flex items-center justify-center cursor-pointer shadow-2xs">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <!-- Scrollable content -->
+      <div class="p-6 sm:p-8 md:p-10 overflow-y-auto space-y-6 text-[#334155] text-sm md:text-[15px] leading-relaxed font-normal">
+        <div class="bg-[#F8FAFC] rounded-2xl p-5 border border-[#E2E8F0] space-y-1.5 text-xs md:text-sm text-[#334155]">
+          <p><strong class="font-semibold text-[#0F172A]">ÚLTIMA ACTUALIZACIÓN:</strong> AGOSTO 2026</p>
+          <p><strong class="font-semibold text-[#0F172A]">OPERADOR DEL SITIO:</strong> Cuzco Chanaluisa Alexandra Verónica</p>
+          <p><strong class="font-semibold text-[#0F172A]">UBICACIÓN:</strong> Texas, United States</p>
+          <p><strong class="font-semibold text-[#0F172A]">CONTACTO DE SOPORTE:</strong> <a href="mailto:soporte@eradigitalpro.com" class="text-[#0284C7] font-medium hover:underline">soporte@eradigitalpro.com</a></p>
+        </div>
+
+        <hr class="border-t border-[#E2E8F0] my-6" />
+
+        <div>
+          <h3 class="text-base md:text-lg font-bold text-[#0F172A] mb-3">1. NATURALEZA DE LOS PRODUCTOS</h3>
+          <p>Dado que <strong class="font-semibold text-[#0F172A]">Cuzco Chanaluisa Alexandra Verónica</strong> comercializa exclusivamente bienes intangibles de entrega electrónica inmediata (ebooks, guías y recursos descargables en formato PDF), el acceso al material se otorga de manera instantánea tras confirmarse la transacción. Por esta razón, no existen devoluciones físicas de productos.</p>
+        </div>
+
+        <div>
+          <h3 class="text-base md:text-lg font-bold text-[#0F172A] mb-3">2. POLÍTICA GENERAL DE VENTAS FINALES</h3>
+          <p>Por regla general, una vez que el producto digital ha sido enviado al correo electrónico del comprador o el enlace de descarga ha sido generado, la venta se considera final y no se ofrecen reembolsos por cambio de opinión o por error en la selección del producto por parte del usuario.</p>
+        </div>
+
+        <div>
+          <h3 class="text-base md:text-lg font-bold text-[#0F172A] mb-3">3. EXCEPCIONES APLICABLES PARA REEMBOLSO</h3>
+          <p class="mb-3">Se evaluarán y procesarán solicitudes de reembolso únicamente bajo las siguientes condiciones extraordinarias y verificables:</p>
+          <ul class="list-disc pl-6 space-y-2 text-[#334155]">
+            <li><strong class="font-semibold text-[#0F172A]">Fallo técnico no resuelto:</strong> Imposibilidad de descargar o abrir el archivo PDF debido a un error técnico del sistema que no pueda ser resuelto por nuestro equipo de soporte en un plazo de 48 horas tras el reporte del cliente.</li>
+            <li><strong class="font-semibold text-[#0F172A]">Cobro duplicado o erróneo:</strong> Transacciones procesadas por error más de una vez debido a una falla en la pasarela de pagos (Stripe/PayPal).</li>
+            <li><strong class="font-semibold text-[#0F172A]">Entrega de archivo incorrecto:</strong> Recepción de un producto digital distinto al adquirido debido a un error en el sistema de automatización de entregas.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-base md:text-lg font-bold text-[#0F172A] mb-3">4. PROCEDIMIENTO PARA SOLICITAR UN REEMBOLSO</h3>
+          <p class="mb-3">Si su caso cumple con alguna de las excepciones mencionadas, debe enviar una solicitud formal dentro de un plazo máximo de 7 días calendario posteriores a la compra.</p>
+          <p class="font-semibold text-[#0F172A] mb-2">Pasos para el reporte:</p>
+          <ul class="list-disc pl-6 space-y-2 text-[#334155]">
+            <li>Envíe un correo electrónico a <a href="mailto:soporte@eradigitalpro.com" class="text-[#0284C7] font-medium hover:underline">soporte@eradigitalpro.com</a>.</li>
+            <li>Indique en el asunto: <span class="font-semibold text-[#0F172A]">Solicitud de Reembolso - [Número de Pedido/Transacción]</span>.</li>
+            <li>
+              Incluya en el mensaje:
+              <ul class="list-circle pl-6 mt-1 space-y-1">
+                <li>Nombre completo del comprador.</li>
+                <li>Correo electrónico utilizado durante la compra.</li>
+                <li>Comprobante o ID de transacción de Stripe o PayPal.</li>
+                <li>Descripción detallada del problema junto con capturas de pantalla si aplica.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-base md:text-lg font-bold text-[#0F172A] mb-3">5. TIEMPO DE PROCESAMIENTO</h3>
+          <p class="mb-3">Una vez recibida la solicitud, nuestro equipo la revisará e informará sobre la aprobación o rechazo de su reembolso en un plazo de 24 a 48 horas hábiles.</p>
+          <p class="font-semibold text-[#0F172A] mb-2">Si el reembolso es aprobado:</p>
+          <ul class="list-disc pl-6 space-y-2 text-[#334155]">
+            <li>El monto será acreditado automáticamente al mismo método de pago utilizado en la compra original.</li>
+            <li>La acreditación bancaria puede tardar de 5 a 10 días hábiles en reflejarse en su estado de cuenta, dependiendo de la entidad financiera o de la pasarela de pago (Stripe/PayPal).</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-base md:text-lg font-bold text-[#0F172A] mb-3">6. POLÍTICA SOBRE CONTRACARGOS Y DISPUTAS (CHARGEBACKS)</h3>
+          <p class="mb-3">Al realizar una compra en este sitio web, el Cliente acepta recurrir primero a nuestro canal oficial de soporte en <a href="mailto:soporte@eradigitalpro.com" class="text-[#0284C7] font-medium hover:underline">soporte@eradigitalpro.com</a> para resolver cualquier inconveniente con su pedido antes de iniciar una disputa o contracargo (chargeback) ante su entidad bancaria o emisor de tarjeta de crédito.</p>
+          <p class="mb-2">En caso de que el Cliente inicie un contracargo no justificado o calificado como fraude amigable (friendly fraud):</p>
+          <ul class="list-disc pl-6 space-y-2 text-[#334155]">
+            <li><strong class="font-semibold text-[#0F172A]">Revocación de Licencia:</strong> El acceso al producto digital, así como cualquier actualización o soporte técnico posterior, quedará cancelado e inhabilitado de forma inmediata y definitiva.</li>
+            <li>
+              <strong class="font-semibold text-[#0F172A]">Presentación de Evidencia a la Pasarela de Pago:</strong> Cuzco Chanaluisa Alexandra Verónica presentará ante Stripe, Inc., PayPal Holdings, Inc. o la entidad bancaria correspondiente toda la evidencia digital disponible que demuestre la validez de la transacción. Esto includes:
+              <ul class="list-circle pl-6 mt-1 space-y-1">
+                <li>Registros de confirmación del pago.</li>
+                <li>Dirección IP y registros de hora/fecha del momento de la compra.</li>
+                <li>Registros de entrega exitosa del enlace de descarga al correo electrónico del comprador.</li>
+                <li>Historial de descargas del archivo PDF.</li>
+                <li>Aceptación explícita de esta Política de Reembolsos y de los Términos y Condiciones durante el proceso de pago.</li>
+              </ul>
+            </li>
+            <li><strong class="font-semibold text-[#0F172A]">Bloqueo de Transacciones Futuras:</strong> El correo electrónico, la dirección IP y los datos de facturación asociados al contracargo serán incluidos en una lista de restricción permanente para evitar futuras compras en este y otros sitios asociados.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-base md:text-lg font-bold text-[#0F172A] mb-3">7. LEY APLICABLE</h3>
+          <p>Esta Política de Reembolsos se rige e interpretan de acuerdo con las leyes del Estado de <strong class="font-semibold text-[#0F172A]">Texas</strong>, Estados Unidos de América.</p>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="px-6 sm:px-8 py-4 border-t border-[#E2E8F0] bg-[#F8FAFC] flex justify-end sticky bottom-0 z-10">
+        <button onclick="closeModal('modal-refunds')" class="px-6 py-2.5 bg-[#0284C7] text-white text-xs font-semibold uppercase tracking-wider rounded-full hover:bg-[#0284C7]/90 transition-colors cursor-pointer shadow-xs">
+          Entendido / Cerrar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="w-full pt-12 pb-16 text-center text-[#334155] border-t border-[#E2E8F0] mt-12 bg-[#F8FAFC]">
+    <div class="max-w-4xl mx-auto px-4 space-y-3">
+      <p class="text-xs text-[#0F172A] font-semibold">
+        &copy; 2026 ERA DIGITAL PRO. All rights reserved.
+      </p>
+      <p class="text-[11px] text-[#334155] font-normal">
+        Texas, United States &middot; Operado por Cuzco Chanaluisa Alexandra Verónica
+      </p>
+      <div class="pt-4 flex flex-wrap justify-center items-center gap-6 text-[11px] font-semibold tracking-[0.2em] text-[#0284C7] uppercase">
+        <button onclick="openModal('modal-privacy')" class="hover:text-[#0F172A] hover:underline transition-colors cursor-pointer uppercase font-semibold">
+          PRIVACIDAD
+        </button>
+        <button onclick="openModal('modal-terms')" class="hover:text-[#0F172A] hover:underline transition-colors cursor-pointer uppercase font-semibold">
+          TÉRMINOS
+        </button>
+        <button onclick="openModal('modal-refunds')" class="hover:text-[#0F172A] hover:underline transition-colors cursor-pointer uppercase font-semibold">
+          REEMBOLSOS
+        </button>
+        <a href="mailto:soporte@eradigitalpro.com" class="hover:text-[#0F172A] hover:underline transition-colors">
+          CONTACTO
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT DE MODALES -->
+  <script>
+    function openModal(id) {
+      var modal = document.getElementById(id);
+      if (modal) {
+        modal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function closeModal(id) {
+      var modal = document.getElementById(id);
+      if (modal) {
+        modal.classList.add('hidden');
+        document.body.style.overflow = '';
+      }
+    }
+
+    // Close on click outside modal
+    ['modal-privacy', 'modal-terms', 'modal-refunds'].forEach(function(id) {
+      var modal = document.getElementById(id);
+      if (modal) {
+        modal.addEventListener('click', function() {
+          closeModal(id);
+        });
+      }
+    });
+
+    // Close on Escape key press
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeModal('modal-privacy');
+        closeModal('modal-terms');
+        closeModal('modal-refunds');
+      }
+    });
+  </script>
 </body>
 </html>
